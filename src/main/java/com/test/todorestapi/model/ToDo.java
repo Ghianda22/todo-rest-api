@@ -13,7 +13,7 @@ public class ToDo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull(message = "you must write what to do")
-    private String whatToDo;
+    private String description;
 
     private boolean isCompleted = false;
 
@@ -23,11 +23,11 @@ public class ToDo {
     public void setId(int id) {
         this.id = id;
     }
-    public String getWhatToDo() {
-        return whatToDo;
+    public String getDescription() {
+        return description;
     }
-    public void setWhatToDo(String whatToDo) {
-        this.whatToDo = whatToDo;
+    public void setDescription(String whatToDo) {
+        this.description = whatToDo;
     }
     public boolean isCompleted() {
         return isCompleted;
